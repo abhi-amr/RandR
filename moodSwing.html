@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>R&amp;R | Mood Swing</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/music.css">
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans|Roboto+Mono|Open+Sans|Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header>
+        <article>
+            <!-- <a href="images/R & R.png"><img src="images/R & R.png" alt="logo" class="logo"></a> -->
+            <h1 id="project-name"><a href="images/R & R.png"><img src="images/R & R.png" alt="logo" class="logo"></a> R &amp; R <i class="fas fa-gamepad"></i> <i class="fas fa-headset"></i></h1>
+        </article>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    
+    <section id="music-section" style="background-image: url('images/close-up-cubes-daytime-design-1154775.jpg');">
+        <h1 class="popular">I&#39;m feeling...</h1>
+        <br><br>
+        <section class="flex-container music-zone">
+                <a onclick="changeFeelValue('happy')" href="./musicTemp.html"><h3 class="playm mood-playm">Happy<br><i class="fa fa-smile-o" aria-hidden="true"></i></h3></a>
+                <a onclick="changeFeelValue('food')" href="./musicTemp.html"><h3 class="playm mood-playm">Lonely<br><i class="fa fa-meh-o" aria-hidden="true"></i></h3></a>
+                <a onclick="changeFeelValue('motivation')" href="./musicTemp.html"><h3 class="playm mood-playm">Depressed<br><i class="fa fa-meh-o" aria-hidden="true"></i></h3></a>
+                <a onclick="changeFeelValue('happy funny')" href="./musicTemp.html"><h3 class="playm mood-playm">Sad<br><i class="fa fa-frown-o" aria-hidden="true"></i></h3></a>
+                <a onclick="changeFeelValue('mensutra')" href="./musicTemp.html"><h3 class="playm mood-playm">Cheated<br><i class="fa fa-frown-o" aria-hidden="true"></i></h3></a>
+
+
+        </section>
+    </section>
+
+   
+    <footer class="flex-container team-parent">
+        <article class="flex-child member" id="abhi">
+            <p>"Paacchar" <br>-Abhishek</p>
+
+        </article>
+        <article class=" flex-child member" id="headout">
+            <p>"Headout" <br>-Dhruv</p>
+
+        </article>
+    </footer>
+    
+    
+    <script>
+        function changeFeelValue(iWantToFeel){
+            localStorage.setItem('feel',iWantToFeel);
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    
+</body>
+</html>
